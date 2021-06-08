@@ -18,7 +18,7 @@ namespace HW07
             List<String> word_list = new List<string>();
             string[] datas = text.Split(" ");
 
-            foreach (string to in datas)
+             foreach (string to in datas)
             {
                 word_list.Add(to);
             }
