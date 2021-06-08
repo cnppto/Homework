@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HW05
 {
@@ -12,12 +13,20 @@ namespace HW05
         {
        
             string[] LED = { "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]"};
-            
+            List<String> Number = new List<string>();
             foreach (string i in LED)
             {
+                Number.Add(i);
+                ///Console.Write(i + " " );
+            }
+            for (int i=0;i< LED.Length; i++)
+            {
+                string on = "[!]";
+                string off = "[ ]";
                 if (ledNo == "1")
                 {
                     LED[0] = "[!]";
+                   
                 }
                 if (ledNo == "2")
                 {
@@ -55,10 +64,11 @@ namespace HW05
                 {
                     LED[9] = "[!]";
                 }
-                Console.Write(i + " " );
-                
             }
-
+            foreach (string i in LED)
+            {
+                Console.Write(i + " " );
+            }
             Console.WriteLine(" ");
             Console.WriteLine(" 1   2   3   4   5   6   7   8   9   A ");
            
