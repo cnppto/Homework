@@ -1,0 +1,16 @@
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.exe
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.deps.json
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.runtimeconfig.json
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.runtimeconfig.dev.json
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.dll
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\ref\HW07.dll
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\bin\Debug\net5.0\HW07.pdb
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.dll
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\ref\HW07.dll
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.pdb
+C:\Users\ADMIN\Desktop\Homework\HW07\HW07\obj\Debug\net5.0\HW07.genruntimeconfig.cache
