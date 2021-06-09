@@ -9,70 +9,22 @@ namespace HW05
     }
     class ChooseLED : IHomework05
     {
+        string ledSt;
+        string on = "[!]";
+        string off = "[ ]";
         public string DisplayLEDOnScreen(string ledNo)
         {
-       
-            string[] LED = { "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]"};
-            List<String> Number = new List<string>();
-            foreach (string i in LED)
+            string[] s = { ledNo };
+            for (int i = 0; i < 10; i++)
             {
-                Number.Add(i);
-                ///Console.Write(i + " " );
-            }
-            for (int i=0;i< LED.Length; i++)
-            {
-                string on = "[!]";
-                string off = "[ ]";
-                if (ledNo == "1")
+                if (ledNo == "A" || ledNo == "1" || ledNo == "2" || ledNo == "3" || ledNo == "4" || ledNo == "5" || ledNo == "6" || ledNo == "7" || ledNo == "8" || ledNo == "9")
                 {
-                    LED[0] = "[!]";
-                   
+                    ledSt = on;
+                    break;
                 }
-                if (ledNo == "2")
-                {
-                    LED[1] = "[!]";
-                }
-                if (ledNo == "3")
-                {
-                    LED[2] = "[!]";
-                }
-                if (ledNo == "4")
-                {
-                    LED[3] = "[!]";
-                }
-                if (ledNo == "5")
-                {
-                    LED[4] = "[!]";
-                }
-                if (ledNo == "6")
-                {
-                    LED[5] = "[!]";
-                }
-                if (ledNo == "7")
-                {
-                    LED[6] = "[!]";
-                }
-                if (ledNo == "8")
-                {
-                    LED[7] = "[!]";
-                }
-                if (ledNo == "9")
-                {
-                    LED[8] = "[!]";
-                }
-                if (ledNo == "A")
-                {
-                    LED[9] = "[!]";
-                }
-            }
-            foreach (string i in LED)
-            {
-                Console.Write(i + " " );
-            }
-            Console.WriteLine(" ");
-            Console.WriteLine(" 1   2   3   4   5   6   7   8   9   A ");
-           
-            return ledNo;
+                
+                    
+            }return ledSt;
         }
     }
     class Program
@@ -83,13 +35,59 @@ namespace HW05
             Console.WriteLine("[ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]");
             Console.WriteLine(" 1   2   3   4   5   6   7   8   9   A ");
 
+            string[] LED = { "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]", "[ ]" };
             string numLED;
             do
             {
                 Console.WriteLine("Please choose LED to turn On/Off: ");
                 numLED = Console.ReadLine();
                 ChooseLED n = new ChooseLED();
-                n.DisplayLEDOnScreen(numLED);
+                
+                int s;
+                if (numLED == "1" || numLED == "2" || numLED == "3" || numLED == "4" || numLED == "5" || numLED == "6" || numLED == "7" || numLED == "8" || numLED == "9")
+                {
+                    s = Convert.ToInt32(numLED) - 1;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        if(s == i && LED[s] == "[!]")
+                        {
+                            LED[s] = "[ ]";
+                            break;
+                        }
+                        if (s == i)
+                        {
+                            LED[s] = n.DisplayLEDOnScreen(numLED);
+                            break;
+                        }
+                    }
+                }
+                if (numLED == "A")
+                {
+                    s = 9;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        if (s == i && LED[s] == "[!]")
+                        {
+                            LED[s] = "[ ]";
+                            break;
+                        }
+                        if (s == i)
+                        {
+                            LED[s] = n.DisplayLEDOnScreen(numLED);
+                            break;
+                        }
+                        
+                    }
+                }
+                foreach (string i in LED)
+                {
+                    Console.Write(i + " ");
+                    
+                }
+                Console.WriteLine(" ");
+                Console.WriteLine(" 1   2   3   4   5   6   7   8   9   A ");
+                Console.WriteLine(" ");
+
             }
             while (numLED != "stop");
 

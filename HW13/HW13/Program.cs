@@ -24,14 +24,14 @@ namespace HW13
             Console.WriteLine("");
             Console.WriteLine("The output : ");
 
-            string[] numbers = Convert.ToString(set).Split(',',' ');
+            string[] numbers = set.Split(',',' ');
 
             int[] num = { };
             List<int> setnum = new List<int>();
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                string t = set.Substring(i, 6);
+                num[i] = numbers[1];
                 Console.WriteLine(t);
             }
             foreach (int i in setnum)
