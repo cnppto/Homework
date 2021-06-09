@@ -39,11 +39,7 @@ namespace HW07
                         break;
                     }
                 }
-                    
             }
-            
-
-
             word_list.Sort();
             foreach(string i in word_list)
             {
